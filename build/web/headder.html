@@ -1,0 +1,49 @@
+
+<html>
+<head>
+	<link href="style/common.css" rel="stylesheet" type="text/css" media="all">
+        <link href="style/responsive.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body onload="click()">
+
+
+    <div class="main_head">
+        <div class="logo"><img src="images/logo6.png"/></div>
+        
+<div id="sidebar">
+<div class="input-group">
+    <form method="get" action="playlist.jsp">
+        <input type="text" class="form-control1" name="sea" placeholder="Search" required/>
+<span class="input-group-btn">
+    <input type="submit" class="edit" style="width: 50px;font-size: 12px" value="search"></span>
+</form>
+</div>
+
+</div>
+        <div class="nav c">
+        <ul>
+            <li id="1" onclick="click(1)"><a href="index.jsp">Home</a></li>
+            <li id="2" onclick="click(2)"><a href="department.jsp">Channel</a></li> 
+            <li id="3" onclick="click(3)"><a href="insertvideos.html" >Upload</a></li>
+            <li id="4" onclick="click(4)"><a href="surb.jsp">Subscriction</a></li>
+                    </ul></div>
+
+<div id="content" style="width:100px;margin-top:0.02em">
+<a href="loginp.jsp" id="l"  ><button class="edit c" style="border-radius:4px;" id="log">login</button></a>
+</div>
+    <div id="content" style="width:50px;margin-right:10px">
+<img class="img c" src="images/photo.jpg"/>
+</div>
+    </div>
+   
+
+       <script type="text/javascript">
+             
+            var click=function(a){
+        var i=document.getElementById(a);
+                i.className="click";
+            };
+        
+        </script>
+    </body>
+</html>
